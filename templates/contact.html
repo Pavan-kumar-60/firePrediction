@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #121212, #1f1f1f);
+        color: #ffffff;
+      }
+      main {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center;
+        background: #1f1f1f;
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+      }
+      .contact-info {
+        margin-bottom: 20px;
+        color: #cccccc;
+      }
+      .contact-info h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #ff9800;
+      }
+      .contact-info p {
+        font-size: 1.1em;
+        line-height: 1.8;
+      }
+      .contact-info button {
+        background-color:#ff9800;
+        color: #fff;
+        border: none;
+        padding: 8px 15px;
+        font-size: 1em;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+      .contact-info button:hover {
+        background: linear-gradient(90deg, #ff5722, #ff9800);
+        transform: translateY(-3px);
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 98%;
+        padding: 8px;
+        border: 1px solid #444;
+        border-radius: 15px;
+        background-color: #333;
+        color: #fff;
+        font-size: 1em;
+        margin-bottom: 15px;
+      }
+      .contact-form textarea {
+        height: 120px;
+      }
+      .contact-form button {
+        padding: 10px 30px;
+        font-size: 1em;
+        color: white;
+        background: linear-gradient(90deg, #ff5722, #ff9800);
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+      .contact-form button:hover {
+        background: linear-gradient(90deg, #ff9800, #ff5722);
+        transform: translateY(-3px);
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+        background: linear-gradient(to top, #121212, #1f1f1f);
+        color: #bbbbbb;
+        border-top: 2px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Contact Info Section -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>
+          Have any questions? Feel free to reach out, and I'll get back to you
+          as soon as possible.
+        </p>
+        <p>You can also connect with me on LinkedIn:</p>
+        <a href="https://www.linkedin.com/in/pavan-kumar-ml" target="_blank">
+          <button>Visit My LinkedIn</button>
+        </a>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>&copy; 2024 JaespaAi Pvt. Ltd. All rights reserved.</footer>
+  </body>
+</html>
