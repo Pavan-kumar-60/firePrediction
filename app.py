@@ -35,7 +35,12 @@ def predict():
         new_scaled = scalar_model.transform([[Temperature, RH, WS, RAIN, FFMC, DMC, ISI,CLASSES,REGION]])
         prediction = reg_model.predict(new_scaled)
         return render_template('result.html', predictions=round(prediction[0],2))
-        
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
